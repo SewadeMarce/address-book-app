@@ -1,11 +1,13 @@
 import compression from "compression";
+import { config } from "dotenv";
 import express from "express";
 import morgan from "morgan";
-
+config()
 // Short-circuit the type-checking of the built output.
+
 const BUILD_PATH = "./build/server/index.js";
 const DEVELOPMENT = process.env.NODE_ENV === "development";
- const PORT = Number.parseInt(process.env.PORT || "5000");
+const PORT = Number.parseInt(process.env.PORT || "5000");
 
 const app = express();
 
@@ -45,3 +47,4 @@ if (DEVELOPMENT) {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
+

@@ -750,10 +750,10 @@ html {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e0e0e0;
+  background: #b1b0b0;
   border-radius: 10px;
 }

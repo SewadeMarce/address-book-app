@@ -108,7 +108,7 @@ class Database {
     }
   }
 
-  /**
+  /** 
    * Drop database (use with caution!)
    */
   async dropDatabase() {

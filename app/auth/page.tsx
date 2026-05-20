@@ -43,7 +43,6 @@ export async function clientAction({ request }: ActionFunctionArgs) {
         credentials: 'include',
         body: JSON.stringify({ username, email, password }),
       });
-      console.log({ res: response, res_js: response.json });
 
       if (!response.ok) {
         const error = await response.json();
